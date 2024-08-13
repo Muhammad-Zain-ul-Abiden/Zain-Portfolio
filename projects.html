@@ -1,11 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .container {
+        border-radius: 10px;
+        max-width: 800px;
+        margin: auto;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .heading {
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px solid rgb(105, 13, 13);
+      }
+
+      .headers {
+        background-color: #ffffff;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid rgb(105, 13, 13);
+        position: relative;
+      }
+
+      .headers a {
+        margin-left: 20px;
+        color: rgb(105, 13, 13);
+        text-align: center;
+        width: 100px;
+        padding: 10px;
+        border-radius: 10%;
+        background-color: rgb(255, 255, 255);
+        transition: all 0.1s ease-in-out;
+        text-decoration: none;
+        border: none;
+      }
+
+      .headers a:hover {
+        transform: translateY(5px);
+        font-weight: bold;
+        background-color: rgb(105, 13, 13);
+        color: white;
+        text-decoration: none;
+        
+      }
+
+      h2 {
+        margin: 0;
+      }
+      p {
+        line-height: 25px;
+      }
+
+      .read {
+        text-align: end;
+        border: 1px solid black;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        margin-left: 5%;
+        color: white;
+        text-decoration: none;
+        font-size: medium;
+        background-color: rgb(105, 13, 13);
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      #menu-toggle {
+        display: none;
+        font-size: 24px;
+        background-color: transparent;
+        border: none;
+        color: rgb(145, 145, 145);
+        cursor: pointer;
+        padding: 10px;
+      }
+      #close-menu {
+        display: none;
+      }
+
+      .footer {
+            color: rgb(0, 0, 0);
+            background-color: rgb(145, 145, 145);
+            text-align: center;
+            width: 100%;
+      }
+
+      @media (max-width: 786px) {
+        #menu-toggle {
+          display: block;
+        }
+        #close-menu {
+          display: block;
+        }
+
+        #nav-menu {
+          display: none;
+          flex-direction: column;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.8);
+          padding: 20px;
+          box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+        }
+
+        #nav-menu.show {
+          display: flex;
+          opacity: 1;
+        }
+
+        #close-menu {
+          margin-left: 20rem;
+          font-size: 30px;
+          color: white;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          margin-bottom: 20px;
+        }
+
+        #close-menu:hover {
+          color: rgb(105, 13, 13);
+        }
+
+        .headers {
+          justify-content: center;
+        }
+
+        .headers h1 {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .headers a {
+          margin-left: 20px;
+          color: rgb(105, 13, 13);
+          text-align: center;
+          margin-top: 20px;
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="headers">
+          <h1>Muhammad Zain ul Abiden.</h1>
+          <button id="menu-toggle" aria-label="Menu">&#9776;</button>
+          <!-- Menu button -->
+          <nav id="nav-menu">
+            <button id="close-menu" aria-label="Close">&times;</button>
+            <a href="index.html">About</a>
+            <a href="cv.html">Resume</a>
+            <a href="https://muhammadzainulabiden.blogspot.com/" target="_blank">Blog</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+    </header>
+        <div class="container">
+        <ul>
+            <li>
+            <h2>Maze Runner Java</h2>
+            <h3 class="description">Description:</h3>
+            <p>
+                Maze Runner is a text-based maze navigation game where players aim
+                to navigate through a challenging maze to reach the exit within a
+                20-second time limit. The game operates on a grid where walls are
+                marked with #, paths are represented by ., the player's starting
+                position is denoted by P, and the exit is marked as E. Players
+                control their character using the W, A, S, and D keys to move up,
+                left, down, and right, respectively. As players progress, the game
+                updates the maze display to reflect their current position and
+                tracks the number of steps taken. Success is achieved by reaching
+                the exit within the time limit, resulting in a victory message and
+                the number of steps taken displayed. If the player fails to reach
+                the exit before time runs out, a loss message is shown along with
+                the steps taken. The game features a high score leaderboard that
+                records and displays the fewest number of steps needed to complete
+                the maze. Additionally, the game credits its developer, Zain, and
+                notes that donations are accepted in dollars.
+            </p>
+            </li>
+        </ul>
+            <div class="read">
+                <a
+                    class="flex"
+                    href="https://github.com/Muhammad-Zain-ul-Abiden/mazeRunner.java"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="color: white; text-decoration: none;"
+                    >Click for more details</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <ul>
+                <li>
+                <h2>Image Transformation MATLAB</h2>
+                <h3 class="description">Description:</h3>
+                <p>
+                    This MATLAB project demonstrates geometric transformations on a 2D rocket model. 
+                    Starting with a space-themed background, the rocket's shape is defined using specific coordinates. 
+                    The project then applies various transformations: reflecting the rocket across the x-axis, 
+                    contracting it by 50% in both dimensions, and expanding it horizontally by a factor of 3. 
+                    Each transformation is animated to visualize the effects, 
+                    culminating in a final plot that shows the transformed rocket. 
+                    This project is an educational exercise in applying linear algebra concepts to computer graphics.
+                </p>
+                </li>
+            </ul>
+                <div class="read">
+                    <a
+                        class="flex"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style="color: white; text-decoration: none;"
+                        >Click for more details</a>
+                </div>
+            </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p style="margin: 0; padding: 10px;">&copy; 2024, Muhammad Zain ul Abiden</p>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+        const closeMenu = document.getElementById("close-menu");
+  
+        menuToggle.addEventListener("click", () => {
+          navMenu.classList.toggle("show");
+        });
+  
+        closeMenu.addEventListener("click", () => {
+          navMenu.classList.remove("show");
+        });
+      </script>
+  </body>
 </html>

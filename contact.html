@@ -3,9 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Information</title>
+    <style>
+        body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        }
+
+
+        .headers {
+        background-color: #ffffff;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid rgb(105, 13, 13);
+        position: relative;
+      }
+
+      .headers a {
+        margin-left: 20px;
+        color: rgb(105, 13, 13);
+        text-align: center;
+        width: 100px;
+        
+        padding: 10px;
+        border-radius: 10%;
+        background-color: rgb(255, 255, 255);
+        transition: all 0.1s ease-in-out;
+        text-decoration: none;
+      }
+
+      .headers a:hover {
+        transform: translateY(5px);
+        font-weight: bold;
+        background-color: rgb(105, 13, 13);
+        color: white;
+      }
+
+        #menu-toggle {
+        display: none;
+        font-size: 24px;
+        background-color: transparent;
+        border: none;
+        color: rgb(145, 145, 145);
+        cursor: pointer;
+        padding: 10px;
+      }
+      #close-menu {
+        display: none;
+      }
+
+        .info {
+        border-radius: 10px;
+        max-width: 800px;
+        margin: auto;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .footer {
+            color: rgb(0, 0, 0);
+            background-color: rgb(145, 145, 145);
+            text-align: center;
+            width: 100%;
+      }
+
+      @media (max-width: 786px) {
+        #menu-toggle {
+          display: block;
+        }
+        #close-menu {
+          display: block;
+        }
+
+        #nav-menu {
+          display: none;
+          flex-direction: column;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.8);
+          padding: 20px;
+          box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+        }
+
+        #nav-menu.show {
+          display: flex;
+          opacity: 1;
+        }
+
+        #close-menu {
+          margin-left: 20rem;
+          font-size: 30px;
+          color: white;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          margin-bottom: 20px;
+        }
+
+        #close-menu:hover {
+          color: rgb(105, 13, 13);
+        }
+
+        .headers {
+          justify-content: center;
+        }
+
+        .headers h1 {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .headers a {
+          margin-left: 20px;
+          color: rgb(105, 13, 13);
+          text-align: center;
+          margin-top: 20px;
+
+        }
+      }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <div class="headers">
+          <h1>Muhammad Zain ul Abiden.</h1>
+          <button id="menu-toggle" aria-label="Menu">&#9776;</button>   <!--open menu bar svg-->
+          <!-- Menu button -->
+          <nav id="nav-menu">
+            <button id="close-menu" aria-label="Close">&times;</button> <!--close icon svg-->
+            <a href="index.html">About</a>
+            <a href="cv.html">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="https://muhammadzainulabiden.blogspot.com/" target="_blank">Blog</a>
+          </nav>
+        </div>
+      </header>
+    <div class="info">
+        <h1>Contact me:</h1>
+        <div class="info">
+            <div class="email">
+                <svg width="100px" height="100px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="rgb(105, 13, 13)" d="M12,13.5l8-6.67v-0.17C20,5.52,19.48,5,18.83,5H5.17C4.52,5,4,5.52,4,6.67v0.17L12,13.5z M12,15.5L4,9v8.67 C4,18.48,4.52,19,5.17,19h13.67C19.48,19,20,18.48,20,17.67V9L12,15.5z"></path>
+                </svg>
+                <p style="color: rgb(0,0,0);">zainabiden7@gmail.com</p>
+                </div>
+            </div>
+            <div class="info">
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100px" height="100px"
+                    
+                >
+                    <path fill="rgb(105, 13, 13)" d="M20.2,15.49l-3.75-1.55c-0.61-0.25-1.32,0-1.65,0.55l-1.57,2.61c-2.7-1.42-4.85-3.57-6.28-6.27l2.61-1.57
+                    c0.56-0.33,0.8-1.04,0.55-1.65L8.5,3.8C8.19,3.16,7.45,2.86,6.79,3.02c-2.43,0.58-4.25,2.78-4.25,5.34
+                    c0,0.05,0,0.1,0,0.15c0,7.18,5.82,13,13,13c0.05,0,0.1,0,0.15,0c2.56,0,4.76-1.82,5.34-4.25
+                    C21.14,16.55,20.84,15.81,20.2,15.49z" />
+                </svg>
+
+                <p style="color: black;">+92 333 413 6428</p>
+            </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p style="margin: 0; padding: 10px;">&copy; 2024, Muhammad Zain ul Abiden</p>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+        const closeMenu = document.getElementById("close-menu");
+  
+        menuToggle.addEventListener("click", () => {
+          navMenu.classList.toggle("show");
+        });
+  
+        closeMenu.addEventListener("click", () => {
+          navMenu.classList.remove("show");
+        });
+      </script>
 </body>
 </html>
