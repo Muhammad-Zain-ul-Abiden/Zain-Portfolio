@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .headers {
+        background-color: #ffffff;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid rgb(105, 13, 13);
+        position: relative;
+      }
+
+      .headers a {
+        margin-left: 20px;
+        color: rgb(105, 13, 13);
+        text-align: center;
+        width: 100px;
+
+        padding: 10px;
+        border-radius: 10%;
+        background-color: rgb(255, 255, 255);
+        transition: all 0.1s ease-in-out;
+        text-decoration: none;
+      }
+
+      .headers a:hover {
+        transform: translateY(5px);
+        font-weight: bold;
+        background-color: rgb(105, 13, 13);
+        color: white;
+      }
+
+      .container {
+        border-radius: 10px;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        padding: 60px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+      }
+
+      #menu-toggle {
+        display: none;
+        font-size: 24px;
+        background-color: transparent;
+        border: none;
+        color: rgb(145, 145, 145);
+        cursor: pointer;
+        padding: 10px;
+      }
+      #close-menu {
+        display: none;
+      }
+
+      .footer {
+        color: rgb(0, 0, 0);
+        background-color: rgb(145, 145, 145);
+        text-align: center;
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+      }
+
+      .read {
+        text-align: center;
+        border: 1px solid black;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        margin-left: 5%;
+        color: white;
+        text-decoration: none;
+        font-size: medium;
+        background-color: rgb(105, 13, 13);
+      }
+
+      @media (max-width: 786px) {
+        #menu-toggle {
+          display: block;
+        }
+        #close-menu {
+          display: block;
+        }
+
+        #nav-menu {
+          display: none;
+          flex-direction: column;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.8);
+          padding: 20px;
+          box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+        }
+
+        #nav-menu.show {
+          display: flex;
+          opacity: 1;
+        }
+
+        #close-menu {
+          margin-left: 20rem;
+          font-size: 30px;
+          color: white;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          margin-bottom: 20px;
+        }
+
+        #close-menu:hover {
+          color: rgb(105, 13, 13);
+        }
+
+        .headers {
+          justify-content: center;
+        }
+
+        .headers h1 {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .headers a {
+          margin-left: 20px;
+          color: rgb(105, 13, 13);
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="headers">
+        <h1>Muhammad Zain ul Abiden.</h1>
+        <button id="menu-toggle" aria-label="Menu">&#9776;</button>
+        <!-- Menu button -->
+        <nav id="nav-menu">
+          <button id="close-menu" aria-label="Close">&times;</button>
+          <a href="index.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="https://muhammadzainulabiden.blogspot.com/" target="_blank"
+            >Blog</a
+          >
+          <!--target attribute is used to open link in new tab-->
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <div class="center">
+      <div class="container">
+        <svg
+          width="100px"
+          height="100px"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+          width="256"
+          height="256"
+          viewBox="0 0 256 256"
+          xml:space="preserve"
+        >
+          <g
+            style="
+              stroke: none;
+              stroke-width: 0;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: none;
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+          >
+            <path
+              d="M 75.412 83.663 h -4.451 v -4 h 4.451 c 0.437 0 0.791 -0.354 0.791 -0.791 V 4.791 C 76.203 4.355 75.849 4 75.412 4 H 21.83 c -0.436 0 -0.791 0.355 -0.791 0.791 v 3.546h -4 V 4.791 C 17.039 2.149 19.188 0 21.83 0 h 53.582 c 2.642 0 4.791 2.149 4.791 4.791 v 74.081 C 80.203 81.514 78.054 83.663 75.412 83.663 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(105, 15, 15);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 26.019 21.56 c -0.957 0 -1.735 0.778 -1.735 1.735 v 2.197 c 0 0.957 0.778 1.735 1.735 1.735 s 1.735 -0.778 1.735 -1.735 v -2.197 C 27.754 22.338 26.976 21.56 26.019 21.56 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(105, 15, 15);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 57.266 26.575 c -2.505 0 -4.543 -2.038 -4.543 -4.543 V 6.337 H 14.588 c -2.642 0 -4.791 2.149 -4.791 4.791 v 74.081 c 0 2.642 2.149 4.791 4.791 4.791 H 68.17 c 2.642 0 4.791 -2.149 4.791 -4.791 V 26.575 H 57.266 z M 21.85 68.647 h -1.709 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 1.709 c 1.104 0 2 0.896 2 2 S 22.955 68.647 21.85 68.647 z M 21.85 58.604 h -1.709 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 1.709 c 1.104 0 2 0.896 2 2 S 22.955 58.604 21.85 58.604 z M 21.85 48.56 h -1.709 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 1.709 c 1.104 0 2 0.896 2 2 S 22.955 48.56 21.85 48.56 z M 22.141 35.105 v 1.411 c 0 1.104 -0.896 2 -2 2 s -2 -0.896 -2 -2 v -1.411 c 0 -2.587 1.26 -4.88 3.192 -6.317 c -0.658 -0.934 -1.049 -2.069 -1.049 -3.296 v -2.197 c 0 -3.162 2.573 -5.735 5.735 -5.735 s 5.735 2.573 5.735 5.735 v 2.197 c 0 1.227 -0.391 2.362 -1.049 3.296 c 1.932 1.437 3.191 3.73 3.191 6.317 v 1.411 c 0 1.104 -0.896 2 -2 2 s -2 -0.896 -2 -2 v -1.411 c 0 -2.138 -1.739 -3.877 -3.877 -3.877 S 22.141 32.967 22.141 35.105 z M 62.616 78.777 H 51.033 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 11.583 c 1.104 0 2 0.896 2 2 S 63.721 78.777 62.616 78.777 z M 62.616 68.705 H 28.289 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 34.328 c 1.104 0 2 0.896 2 2 S 63.721 68.705 62.616 68.705 z M 26.289 56.632 c 0 -1.104 0.896 -2 2 -2 h 16.013 c 1.104 0 2 0.896 2 2 s -0.896 2 -2 2 H 28.289 C 27.184 58.632 26.289 57.736 26.289 56.632 z M 62.616 58.632 H 51.033 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 11.583 c 1.104 0 2 0.896 2 2 S 63.721 58.632 62.616 58.632 z M 62.616 48.56 H 28.289 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 34.328 c 1.104 0 2 0.896 2 2 S 63.721 48.56 62.616 48.56 z M 62.616 38.488 H 39.362 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 23.254 c 1.104 0 2 0.896 2 2 S 63.721 38.488 62.616 38.488 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(105, 15, 15);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 56.723 22.032 c 0 0.299 0.243 0.543 0.543 0.543 h 14.482 c -0.067 -0.075 -0.119 -0.16 -0.19 -0.231 L 56.954 7.74 c -0.072 -0.072 -0.156 -0.124 -0.231 -0.19 V 22.032 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(105, 15, 15);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+          </g>
+        </svg>
+
+        <h1 style="text-align: center">Resume</h1>
+
+        <div class="read">
+          <a
+            class="flex"
+            href="https://drive.google.com/file/d/1cx9nI5nRWo8unbj9ZvvRHWYx8T8zA8Po/view"
+            target="_blank"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="color: white; text-decoration: none"
+          >
+            Click for Preview/Download</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <p style="margin: 0; padding: 10px">
+          &copy; 2024, Muhammad Zain ul Abiden
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+      const closeMenu = document.getElementById("close-menu");
+
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        navMenu.classList.remove("show");
+      });
+    </script>
+  </body>
+</html>
